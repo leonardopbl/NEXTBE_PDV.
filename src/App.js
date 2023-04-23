@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+
+import InfoSession from './components/InfoSession';
+import ProductRow from './components/ProductRow';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="aside">
+        <li><a href="#">Vendas</a></li>
+        <li><a href="#">Consultar vendas</a></li>
+        <li><a href="#">Fechar caixa</a></li>
+      </div>
+      <div className="main">
+        <div className="infosession">
+          <InfoSession ></InfoSession>
+        </div>
+        <div className="searchbar">
+          <SearchBar />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
+
 
 export default App;
