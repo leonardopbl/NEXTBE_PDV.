@@ -1,36 +1,5 @@
-.App {
-    display: flex;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-.productrow {
-    display: flex;
-    margin-top: 30px; 
-    justify-content: space-around;
-}
-
-.aside {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    height: 100vh;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
   
-  .aside a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 0;
-  }
-  
-  .aside a:hover {
-    background-color: #555;
-  }
-  
-  .aside a:hover {
-    background-color: #555;
-  }

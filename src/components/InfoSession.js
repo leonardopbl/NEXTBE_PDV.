@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-import './InfoSession.css';
-
 export default function Main() {
     return (
-        <div className="infosession">
-            <h2>Digite quantas coca-colas você comprou</h2>
+        <div className="w-full flex h-20 justify-between shadow-2xl">
+            <h2>Digite quantas coca-cola você comprou</h2>
+            <h2>Digite quantas coca-cola você comprou</h2>
+            <h2>Digite quantas coca-cola você comprou</h2>
         </div>
     )
 }

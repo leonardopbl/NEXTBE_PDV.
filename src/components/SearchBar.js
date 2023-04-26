@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import "./SearchBar.css"
 
 import ProductRow from "./ProductRow";
 
@@ -34,10 +33,13 @@ function SearchBar() {
 
     }
     return (
-        <div className="searchBar">
-            <input type="text" placeholder="digite a quantidade" onChange={checkValue}></input>
-            <input type="button" value="Buscar" onClick={handleChange}></input>
-            {error && <div className="error">{error}</div>}
+        <div className="searchbar">
+            <div className="w-full grid justify-items-stretch text-align shadow-inner shadow-blue-500">
+                <input type="text" placeholder="digite a quantidade" onChange={checkValue}></input>
+            </div>
+            <div className="w-full grid justify-items-stretch shadow-2xl">
+                <button type="button" value="Buscar" onClick={handleChange}></button>
+            </div>
             <ProductRow price={priceValue} quantity={quantityValue}></ProductRow>
         </div>
     )
